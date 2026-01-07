@@ -1,0 +1,1144 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../online-experiments/">
+      
+      
+        <link rel="next" href="../projects/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Running EEG Experiments - DM² Lab Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#running-eeg-experiments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="DM² Lab Wiki" class="md-header__button md-logo" aria-label="DM² Lab Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DM² Lab Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Running EEG Experiments
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="DM² Lab Wiki" class="md-nav__button md-logo" aria-label="DM² Lab Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DM² Lab Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiki Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../softwares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Softwares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../online-experiments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running Online Experiments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running EEG Experiments
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running EEG Experiments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-a-standard-eeg-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview of a Standard EEG Session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eeg-lab-220a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EEG Lab 2.20A
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EEG Lab 2.20A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-the-participant-arrives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before the Participant Arrives
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Before the Participant Arrives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-eeg-recording-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check EEG Recording Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-stimulation-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check Stimulation Computer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrode-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Electrode Preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-paperwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check Paperwork
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eeg-preparation-and-cap-fitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EEG Preparation and Cap Fitting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EEG Preparation and Cap Fitting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-of-external-electrodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose of External Electrodes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-points-to-emphasize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Points to Emphasize
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training Block
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Experiment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-each-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting Each Block
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#during-each-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        During Each Block
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#between-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Between Blocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Completion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-a-standard-eeg-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview of a Standard EEG Session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eeg-lab-220a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EEG Lab 2.20A
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EEG Lab 2.20A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-the-participant-arrives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before the Participant Arrives
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Before the Participant Arrives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-eeg-recording-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check EEG Recording Mac
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-stimulation-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check Stimulation Computer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrode-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Electrode Preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-paperwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check Paperwork
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eeg-preparation-and-cap-fitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EEG Preparation and Cap Fitting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EEG Preparation and Cap Fitting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose-of-external-electrodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose of External Electrodes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-points-to-emphasize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Points to Emphasize
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training Block
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Experiment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-each-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting Each Block
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#during-each-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        During Each Block
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#between-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Between Blocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Completion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="running-eeg-experiments">Running EEG Experiments</h1>
+<p>This page describes standard procedures for running EEG experiments
+in the DM² Lab.</p>
+<p>All experimenters are expected to follow these guidelines to ensure
+data quality, participant safety, and consistency across studies.</p>
+<p>The procedures below apply to typical EEG experiments involving
+decision-making tasks and behavioural responses.</p>
+<hr />
+<h2 id="overview-of-a-standard-eeg-session">Overview of a Standard EEG Session</h2>
+<p>A standard EEG session consists of the following stages:</p>
+<ol>
+<li>Preparation before the participant arrives  </li>
+<li>Participant briefing and consent  </li>
+<li>EEG cap fitting and electrode preparation  </li>
+<li>Training block  </li>
+<li>Main experiment (multiple blocks)  </li>
+<li>Breaks and monitoring during the session  </li>
+<li>Session completion and data saving  </li>
+</ol>
+<p>At the end of each session, make sure to clean all EEG equipment,
+turn off the system, and place the battery on charge before leaving the lab.</p>
+<hr />
+<h2 id="eeg-lab-220a">EEG Lab 2.20A</h2>
+<h3 id="before-the-participant-arrives">Before the Participant Arrives</h3>
+<h4 id="check-eeg-recording-mac">Check EEG Recording Mac</h4>
+<ul>
+<li>Start the Mac computer<br />
+<em>(Password: geodesic)</em></li>
+<li>Set up the battery (see EEG setup instructions)</li>
+<li>Open <strong>Active</strong> on the Mac</li>
+<li>Navigate to the <strong>PSY 600</strong> folder and load <strong>config32</strong></li>
+</ul>
+<hr />
+<h4 id="check-stimulation-computer">Check Stimulation Computer</h4>
+<ul>
+<li>
+<p><strong>Windows version</strong><br />
+  PIN: 764776<br />
+  Password: eeg220fogg</p>
+</li>
+<li>
+<p><strong>Ubuntu version</strong><br />
+  Password: <code>!@£$%^&amp;*()</code></p>
+</li>
+</ul>
+<blockquote>
+<p>Please use the <strong>Ubuntu version</strong> if your experiment is run via
+Psychtoolbox and requires precise timing.</p>
+</blockquote>
+<ul>
+<li>Launch MATLAB (if your experiment uses Psychtoolbox)</li>
+<li>Navigate to the correct experiment folder</li>
+<li>Run the main task script to confirm that the task launches correctly</li>
+<li>Verify that triggers are sent correctly (if applicable)</li>
+</ul>
+<hr />
+<h4 id="electrode-preparation">Electrode Preparation</h4>
+<ul>
+<li>Fill syringes with conductive gel</li>
+<li>Prepare small pieces of tape for securing external electrodes</li>
+<li>Attach round adhesive stickers to external electrodes</li>
+<li>Prepare alcohol swabs</li>
+</ul>
+<hr />
+<h4 id="check-paperwork">Check Paperwork</h4>
+<ul>
+<li>Prepare the participant information sheet</li>
+<li>Prepare the consent form</li>
+<li>Confirm the participant ID</li>
+</ul>
+<hr />
+<h2 id="eeg-preparation-and-cap-fitting">EEG Preparation and Cap Fitting</h2>
+<ul>
+<li>Ask the participant to take a seat</li>
+<li>Explain that an EEG cap will be fitted to measure brain activity</li>
+<li>Explain that additional electrodes will be placed externally near
+  the eyes and on the earlobes</li>
+</ul>
+<h3 id="purpose-of-external-electrodes">Purpose of External Electrodes</h3>
+<ul>
+<li>Eye activity generates strong electrical signals</li>
+<li>These signals are recorded to help remove eye-related artefacts during analysis</li>
+</ul>
+<h3 id="key-points-to-emphasize">Key Points to Emphasize</h3>
+<ul>
+<li>The procedure is non-invasive</li>
+<li>The participant may stop or ask questions at any time</li>
+<li>Participant comfort is a priority</li>
+</ul>
+<hr />
+<h2 id="training-block">Training Block</h2>
+<p>Training can usually be conducted while electrode preparation is ongoing.</p>
+<ul>
+<li>After attaching the external electrodes, allow the participant to start
+  the training block</li>
+<li>Launch the training task on the stimulation computer</li>
+<li>Enter participant details as required</li>
+<li>Read out task instructions in a conversational manner and ensure
+  the participant understands the task</li>
+</ul>
+<hr />
+<h2 id="main-experiment">Main Experiment</h2>
+<p>Upon completion of the training block, instructions for the main experiment
+will appear.</p>
+<ul>
+<li>Read out instructions in a conversational manner</li>
+<li>Encourage questions and clarify any misunderstandings</li>
+<li>Briefly summarise the key task requirements</li>
+</ul>
+<hr />
+<h3 id="starting-each-block">Starting Each Block</h3>
+<p>When ready to start a block:</p>
+<ul>
+<li>Confirm that the participant is comfortable and ready</li>
+<li>Leave the EEG recording chamber and close the door</li>
+<li>Start the EEG recording and enter the subject number using a consistent
+  naming convention<br />
+<em>(e.g. Sub001_Block1)</em></li>
+<li>Click <strong>Pause</strong> to begin EEG recording</li>
+<li>Start the first block of trials on the stimulation computer</li>
+</ul>
+<p>Save EEG recordings separately for each block.</p>
+<hr />
+<h3 id="during-each-block">During Each Block</h3>
+<ul>
+<li>Monitor incoming EEG data and participant performance</li>
+<li>Observe response accuracy and behavioural patterns</li>
+</ul>
+<p>If responses suggest a misunderstanding:</p>
+<ul>
+<li>Allow the participant to complete the current block</li>
+<li>Clarify instructions before the next block begins</li>
+</ul>
+<hr />
+<h3 id="between-blocks">Between Blocks</h3>
+<ul>
+<li>Stop the EEG recording</li>
+<li>Save the data file using the correct naming convention</li>
+<li>Check in with the participant:</li>
+<li>How are you doing?</li>
+<li>Do you need a short break or some water?</li>
+<li>Do you have any questions?</li>
+<li>
+<p>Are you managing to blink during the slider periods?</p>
+</li>
+<li>
+<p>Start the next block when the participant is ready</p>
+</li>
+</ul>
+<p>Repeat this procedure for each block.</p>
+<hr />
+<h2 id="session-completion">Session Completion</h2>
+<p>After the final block:</p>
+<ul>
+<li>Stop and save the EEG recording</li>
+<li>Confirm that all data files are saved correctly</li>
+<li>Remove the EEG cap and electrodes</li>
+<li>Clean all equipment according to lab procedures</li>
+<li>Thank the participant for their time</li>
+</ul>
+<hr />
+<h2 id="general-notes">General Notes</h2>
+<ul>
+<li>Maintain a calm and professional tone throughout the session</li>
+<li>Document any deviations from standard procedures</li>
+<li>Record technical issues or unusual events</li>
+<li>Ensure that all data are securely backed up after the session</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
